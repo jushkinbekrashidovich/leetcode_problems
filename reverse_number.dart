@@ -1,13 +1,15 @@
 void main(){
 
-  int reversedValue = reversedNumber(123);
-  print("Reverse of ${reversedValue}");
+  var ret  = Solution().reverse(123);
+  print("Reverse of ${ret}");
   
 
 
 }
 
-int reversedNumber(int input){
+class Solution {
+
+int reverse(int input){
 
   int revNum = 0;
   while(input!=0){
@@ -18,4 +20,4 @@ int reversedNumber(int input){
   }
   return revNum;
 
-}
+}}
